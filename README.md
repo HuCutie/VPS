@@ -12,6 +12,9 @@
 > `sudo su`  
 > `passwd`  
 ### 3. 修改登录方式
+### **更简单的方法：**
+> ` sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;`  
+> ` sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;`  
 ### **修改第一处：**
 > ` vi /root/.ssh/authorized_keys`  
 ### 找到 `ssh-rsa`字样， 按键盘`i`进入编辑模式，将`ssh-rsa`前面的内容全部删除。
