@@ -46,7 +46,7 @@
 ### 1. 拉取脚本并执行
 > `apt update -y`  
 > `apt install -y curl`  
-> `apt install -y socat`
+> `apt install -y socat`  
 > `curl https://get.acme.sh | sh`  
 > `~/.acme.sh/acme.sh --register-account -m xxx@xxx.xxx`   
 ### 2. 申请证书  
