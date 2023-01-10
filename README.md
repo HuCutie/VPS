@@ -58,3 +58,19 @@
 ### 2. 路径设置  
 公钥路径：`/root/cert.crt`  
 私钥路径：`/root/private.key`
+
+## 四、密钥登录
+### 1. 生成密钥对
+> `ssh-keygen`  
+### 2. 将公钥写入到 authorized_keys 文件  
+> `cd .ssh/`  
+> `cat id_rsa.pub >> authorized_keys`   
+### 3. 将密钥拷下来  
+### 4. 修改权限  
+> `chmod 600 authorized_keys`
+> `chmod 700 ~/.ssh`  
+### 5. 开启密钥登录选项  
+> `vim /etc/ssh/sshd_config`
+> `PubkeyAuthentication yes`
+### 6. 重启服务  
+> `service sshd restart`
