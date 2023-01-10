@@ -67,10 +67,10 @@
 > `cat id_rsa.pub >> authorized_keys`   
 ### 3. 将密钥拷下来  
 ### 4. 修改权限  
-> `chmod 600 authorized_keys`
+> `chmod 600 authorized_keys`  
 > `chmod 700 ~/.ssh`  
 ### 5. 开启密钥登录选项  
-> `vim /etc/ssh/sshd_config`
+> `vim /etc/ssh/sshd_config`  
 > `PubkeyAuthentication yes`
 ### 6. 重启服务  
 > `service sshd restart`
