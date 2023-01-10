@@ -74,3 +74,7 @@
 > `PubkeyAuthentication yes`
 ### 6. 重启服务  
 > `service sshd restart`
+
+## 六、连接提示语  
+### 可在`/etc/motd`中编辑  
+> `vim /etc/motd`  
