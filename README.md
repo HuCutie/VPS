@@ -59,7 +59,7 @@
 公钥路径：`/root/cert.crt`  
 私钥路径：`/root/private.key`
 
-## 四、密钥登录
+## 五、密钥登录
 ### 1. 生成密钥对
 > `ssh-keygen`  
 ### 2. 将公钥写入到 authorized_keys 文件  
